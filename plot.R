@@ -22,7 +22,7 @@ g <- g + theme_minimal() + theme(axis.title.x=element_blank())
 # g <- g + ylim(4,12)
 g <- g + scale_y_continuous(
 	limits=c(4,15),
-	name="Real Dollars (log scale, not inflation adjusted)",
+	name="Real Dollars (log scale)",
 	breaks=c(4:15),
 	labels=c('$10k','$100k', '$1m', '$10m', '$100m','$1b','$10b','$100b','$1t','$10t','$100t', '$1q'))
 
@@ -51,4 +51,4 @@ labels = c(
 
 g <- g + geom_text(aes(Year, log10(Price), label=Model), check_overlap=TRUE, hjust=0, nudge_x=5, data=planes) #subset(planes, Model %in% labels))
 
-ggsave("augustine.png");
+# ggsave("augustine.png");
