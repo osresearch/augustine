@@ -17,4 +17,12 @@ This R script attempts to verify this law.
 * [GDP](https://fred.stlouisfed.org/series/GDP)
 * [Combat aircraft prices](https://en.wikipedia.org/wiki/File:Augustine%27s_law.svg)
 
+
 ![Plot of combat aircraft prices, FDEX and GDP on a logscale](augustine.png)
+
+Some concerns about the data sets:
+* Are they all nominal prices or is there a mix of real (inflation adjusted) and nominal?
+* How accurate are the prices? Wikipedia F-35 disagrees, for instance.
+* What happens when `FDEX` > `GDP`?
+* Does it make sense to do linear extrapolation on log of nominal prices?
+* Is it true that everything looks linear on a log/log scale?
